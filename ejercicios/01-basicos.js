@@ -14,7 +14,26 @@ function dividir(a, b) {
 }
 
 // Ejercicio 2: Palíndromo
-// TODO: Crear una función que verifique si una palabra es un palíndromo
+/**
+ * Verifica si una palabra es un palíndromo.
+ * Un palíndromo es una palabra o frase que se lee igual de izquierda a derecha que de derecha a izquierda,
+ * ignorando mayúsculas, espacios y caracteres especiales.
+ *
+ * @param {string} palabra - La palabra o frase a verificar.
+ * @returns {boolean} - Retorna true si la palabra es un palíndromo, de lo contrario false.
+ * @throws {Error} - Lanza un error si el argumento no es una cadena de texto.
+ */
+function esPalindromo(palabra) {
+    if (typeof palabra !== 'string') {
+        throw new Error('El argumento debe ser una cadena de texto');
+    }
+
+    // Limpia la palabra: convierte a minúsculas y elimina caracteres no alfanuméricos
+    const palabraLimpia = palabra.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+    // Compara la palabra limpia con su reverso
+    return palabraLimpia === palabraLimpia.split('').reverse().join('');
+}
 
 // Ejercicio 3: FizzBuzz
 // TODO: Implementar el clásico FizzBuzz (1-100)
@@ -24,3 +43,5 @@ function dividir(a, b) {
 
 // Ejercicio 5: Números primos
 // TODO: Verificar si un número es primo
+
+module.exports = { esPalindromo };

@@ -1,0 +1,23 @@
+{
+  "name": "copilot-workshop-practicas",
+  "version": "1.0.0",
+  "description": "Este repositorio contiene ejercicios prácticos para aprender a usar GitHub Copilot.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robertomenciasoftwareone/copilot-workshop-practicas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robertomenciasoftwareone/copilot-workshop-practicas/issues"
+  },
+  "homepage": "https://github.com/robertomenciasoftwareone/copilot-workshop-practicas#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
+}

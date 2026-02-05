@@ -1,0 +1,89 @@
+{
+  "info": {
+    "_postman_id": "12345678-1234-1234-1234-123456789abc",
+    "name": "CarApi Collection",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Cars",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/cars",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["cars"]
+        }
+      }
+    },
+    {
+      "name": "Get Car by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/cars/:id",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["cars", ":id"],
+          "variable": [
+            {
+              "key": "id",
+              "value": "1"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Add New Car",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"3\",\n  \"brand\": \"Ford\",\n  \"model\": \"Focus\",\n  \"year\": 2021\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/cars",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["cars"]
+        }
+      }
+    },
+    {
+      "name": "Update Car",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"id\": \"1\",\n  \"brand\": \"Toyota\",\n  \"model\": \"Corolla Updated\",\n  \"year\": 2022\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/cars/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["cars", "1"]
+        }
+      }
+    }
+  ]
+}

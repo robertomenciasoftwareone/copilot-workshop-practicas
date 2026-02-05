@@ -1,5 +1,17 @@
 // Ejercicio 1: Calculadora básica
-// TODO: Crear funciones para sumar, restar, multiplicar y dividir dos números
+// Crear funciones para sumar, restar, multiplicar y dividir dos números
+function sumar(a, b) {
+    return a + b;
+}
+function restar(a, b) {
+    return a - b;
+}
+function multiplicar(a, b) {
+    return a * b;
+}
+function dividir(a, b) {
+    return a / b;
+}
 
 // Ejercicio 2: Palíndromo
 // TODO: Crear una función que verifique si una palabra es un palíndromo

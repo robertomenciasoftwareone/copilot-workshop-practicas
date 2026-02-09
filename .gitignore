@@ -20,3 +20,7 @@ Thumbs.db
 # Maven
 target/
 *.class
+
+# .NET
+obj/
+bin/

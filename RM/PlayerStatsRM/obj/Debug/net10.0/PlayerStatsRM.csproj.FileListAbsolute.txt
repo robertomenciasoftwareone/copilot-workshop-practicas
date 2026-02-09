@@ -1,0 +1,9 @@
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.csproj.AssemblyReference.cache
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\rpswa.dswa.cache.json
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.GeneratedMSBuildEditorConfig.editorconfig
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.AssemblyInfoInputs.cache
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.AssemblyInfo.cs
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.csproj.CoreCompileInputs.cache
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.MvcApplicationPartsAssemblyInfo.cs
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.MvcApplicationPartsAssemblyInfo.cache
+c:\Users\roberto.mencia\copilot-workshop-practicas\RM\PlayerStatsRM\obj\Debug\net10.0\PlayerStatsRM.sourcelink.json

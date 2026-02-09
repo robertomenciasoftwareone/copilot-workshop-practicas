@@ -1,0 +1,138 @@
+{
+  "info": {
+    "_postman_id": "player-stats-api-collection",
+    "name": "Player Stats API",
+    "description": "Collection para testing de la Player Stats API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Top Scorers",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/players/topscorers?page=1&size=5",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "players",
+            "topscorers"
+          ],
+          "query": [
+            {
+              "key": "page",
+              "value": "1"
+            },
+            {
+              "key": "size",
+              "value": "5"
+            }
+          ]
+        },
+        "description": "Obtiene lista paginated de los máximos goleadores ordenados descendentemente"
+      },
+      "response": []
+    },
+    {
+      "name": "Add New Player",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Cristiano Ronaldo\",\n  \"goals\": 20\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/players",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "players"
+          ]
+        },
+        "description": "Crea un nuevo jugador"
+      },
+      "response": []
+    },
+    {
+      "name": "Increment Player Goals",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/players/1/gol",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "players",
+            "1",
+            "gol"
+          ]
+        },
+        "description": "Incrementa los goles del jugador con ID 1 (Mbappe)"
+      },
+      "response": []
+    },
+    {
+      "name": "Increment Vinicius Goals",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/players/2/gol",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "players",
+            "2",
+            "gol"
+          ]
+        },
+        "description": "Incrementa los goles del jugador con ID 2 (Vinicius)"
+      },
+      "response": []
+    },
+    {
+      "name": "Increment Bellingham Goals",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/players/3/gol",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "players",
+            "3",
+            "gol"
+          ]
+        },
+        "description": "Incrementa los goles del jugador con ID 3 (Bellingham)"
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:5111",
+      "type": "string"
+    }
+  ]
+}
